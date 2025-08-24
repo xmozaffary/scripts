@@ -10,5 +10,7 @@ Kör följande kommando för att uppdatera och rensa din Ubuntu-server:
 ## Systemmeny för Ubuntu Server
 Kör följande kommando för att starta en enkel systemmeny med olika administrativa funktioner:
 ```bash
-  curl https://raw.githubusercontent.com/xmozaffary/scripts/refs/heads/main/sysmenu.sh | bash
+  curl -fsSL -o /tmp/sysmenu.sh https://raw.githubusercontent.com/xmozaffary/scripts/refs/heads/main/sysmenu.sh
+bash /tmp/sysmenu.sh
+
 ```
