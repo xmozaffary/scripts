@@ -3,11 +3,6 @@ set -euo pipefail
 
 # --- Funktioner ---
 
-cat <<END
-Hej, jag heter $USER
-Idag är det $(date)
-END
-
 
 show_main(){
     cat <<EOF
