@@ -171,12 +171,6 @@ reset_password() {
 
 while true; do
     clear
-cat <<END
-Hej, jag heter $USER
-Idag är det $(date)
-END
-
-
     show_main
     read -rp "Välj: " choice
     case "${choice:-}" in
