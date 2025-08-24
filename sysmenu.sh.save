@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# --- Funktioner ---
+show_main(){
+    cat <<EOF
+Hej $USER
+EOF
+
+
+    cat <<'EOF'
+====Systemmeny====
+1) Testa att den fungerar
+2) Visa datum & uptime
+q) Avsluta
+==================
+EOF
+}
+
+while true; do
+    clear
+    show_main
+    read -rp "Välj: " choice
+    echo "${choice:-}"
+
+    case "${choice:-}" in
+    1)
+	do_test
+	;;
+    q|Q)
+	echo "Hejdå!"
+	exit 0
+	;;
+    esacread -rp "Välj: " choice
+done
